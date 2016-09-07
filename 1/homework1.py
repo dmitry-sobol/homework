@@ -23,5 +23,5 @@ while i < len(question):
         true_answers += 1
         print ("Ответ верный, верных ответов: ", true_answers, "\n")
     else:
-        print ("Ответ не верный \n")
+        print ("Ответ неверный \n")
     i += 1
