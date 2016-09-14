@@ -39,7 +39,6 @@ def print_field(field):
     i = 0
     for tile in field:
     	i += 1
-    	#print('i=', i)
     	if i % 4 == 0:
     		print(tile)
     	else:
@@ -112,6 +111,7 @@ def main():
         except IndexError:
         	print('Oops! You can\'t exit from borders \n' )
         print_field(field)
+        print('\nYour next step: ')
         steps += 1
     else:
         print('Done! Steps: ', steps)
