@@ -72,9 +72,7 @@ def perform_move(field, key):
         newindex = oldindex - -move
     else:
         newindex = oldindex + move
-    if (newindex < 0) or (newindex>15):
-        raise IndexError
-    elif oldindex in (0, 4, 8, 12) and (move == -1):
+    if oldindex in (0, 4, 8, 12) and (move == -1):
     	raise IndexError
     elif oldindex in (3, 7, 11, 15) and (move == 1):
     	raise IndexError
